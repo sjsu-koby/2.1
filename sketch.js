@@ -32,7 +32,14 @@ function draw() {
 }
 
 function changeBackground() {
+  if (counter <= 4){
+    counter++;
+    console.log(counter)
+  background(random(255),random(255),random(255));
+  setTimeout(changeBackground, 1000);
+} else {
   
+}
 }
 
 function mousePressed() {
