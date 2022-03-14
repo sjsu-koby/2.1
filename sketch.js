@@ -11,27 +11,22 @@ var dogs = [{
 }, {
   name: "Nalla",
   color: "black"
-}]
+}];
 
 var randomIndex;
+var counter = 0;
 
 function setup() {
   createCanvas(600, 600);
-  background(220);
+  background(200);
   textSize(32)
 
   text("click to randomize", 50 , 50)
 
-  setTimeout(changeBackground, 1000);
-}
-
-function draw() {
 
 }
-function changeBackground(){
-background(random(255), random(255), random(255))
 
-}
+
 function mousePressed(){
   if(dogs[0]){
   background(random(200, 255));
